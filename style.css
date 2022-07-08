@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body > div {
+  display: flex;
+  gap: 20px;
+}
+
+#grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 3px solid #e4ccaf;
+  width: fit-content;
+}
+
+#info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+#info div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#info div input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+#info div label {
+  font-size: 1rem;
+}
+
+#info .size-input {
+  width: 50px;
+}
+
+#info .size-input input {
+  width: inherit;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: bisque;
+}
+
+.cell.start-pos {
+  background-color: rgb(191, 221, 106);
+}
+
+.cell.end-pos {
+  background-color: rgb(218, 157, 71);
+}
+
+.cell.path-pos {
+  background-color: rgb(71, 218, 198);
+}
+
+.cell.current-pos {
+  background-color: rgb(194, 68, 211);
+}
+
+.cell.neighbour-pos {
+  background-color: rgb(250, 11, 91);
+}
+
+.cell.obstacle-pos {
+  background-color: black;
+}
+
+.f-cost {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.g-and-h-cost {
+  display: flex;
+  justify-content: space-around;
+}
